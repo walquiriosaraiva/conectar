@@ -51,10 +51,13 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
 
+## Link do sistema modelo
+https://github.com/Daniel-Santos9/Sistema_padaria/tree/master/Padaria
+
 ## Database
-* `CREATE DATABASE db_conectar;`
-* `CREATE USER 'user_conectar'@'localhost' IDENTIFIED BY '123mudar';`
-* `GRANT ALL PRIVILEGES ON db_conectar.* TO 'user_conectar'@'localhost';`
+* `CREATE DATABASE padaria;`
+* `CREATE USER 'padaria'@'localhost' IDENTIFIED BY 'padaria';`
+* `GRANT ALL PRIVILEGES ON padaria.* TO 'padaria'@'localhost';`
 * `FLUSH PRIVILEGES;`
 
 ## Criar as Tabelas: ###
@@ -70,16 +73,13 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 * `php artisan migrate:refresh --seed`
 
 ## Inserir dados em uma tabela expecifica
-* `php artisan db:seed --class=UserSeeder`
+* `php artisan db:seed --class=BancoSeeder`
 
 ## Caso precise gerar novamente o dumpautoload das classes novas
-* `Exemplo: Cridou a classe UserSeeder tem que rodar o comando abaixo e em seguida`
+* `Exemplo: Cridou a classe BancoSeeder tem que rodar o comando abaixo e em seguida`
 * `composer dumpautoload -o`
-* `php artisan db:seed --class=UserSeeder`
+* `php artisan db:seed --class=BancoSeeder`
 
 ## Permissões nas pastas 
 * `sudo chgrp -R www-data storage`
 * `sudo chmod -R ug+rwx storage`
-
-## Executar a aplicação 
-* `php artisan serve`
