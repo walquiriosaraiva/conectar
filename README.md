@@ -51,7 +51,7 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
 
-## Database
+## Criando database database no MySQL
 * `CREATE DATABASE db_conectar;`
 * `CREATE USER 'user_conectar'@'localhost' IDENTIFIED BY '123mudar';`
 * `GRANT ALL PRIVILEGES ON db_conectar.* TO 'user_conectar'@'localhost';`

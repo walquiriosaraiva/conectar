@@ -18,7 +18,7 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email',160)->unique();
             $table->string('password');
-            $table->integer('perfil')->default(3)->comment('1 - Administrador, 2 - Gerente, 3 - Atendente');
+            $table->integer('perfil')->default(3)->comment('1 - Administrador, 2 - Doador, 3 - Beneficiário');
             $table->rememberToken();
             $table->timestamps();
         });

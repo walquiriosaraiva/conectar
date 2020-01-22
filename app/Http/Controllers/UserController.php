@@ -29,9 +29,9 @@ class UserController extends Controller
             if($value->perfil == 1):
                 $value->setAttribute('des_perfil', 'Administrador');
             elseif($value->perfil == 2):
-                $value->setAttribute('des_perfil', 'Gerente');
+                $value->setAttribute('des_perfil', 'Doador');
             else:
-                $value->setAttribute('des_perfil', 'Atendente');
+                $value->setAttribute('des_perfil', 'Beneficiário');
             endif;
         endforeach;
 
