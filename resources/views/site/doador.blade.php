@@ -46,7 +46,7 @@
                                 <div class="form-group">
                                     <div class="col-md-2">
                                         <label for="datNascimento" class="control-label">Data de nascimento</label>
-                                        <input type="text" class="form-control" id="datNascimento" name="datNascimento"
+                                        <input type="date" class="form-control" id="datNascimento" name="datNascimento"
                                                required="required">
                                     </div>
                                     <div class="col-md-10">

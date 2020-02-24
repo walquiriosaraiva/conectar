@@ -28,6 +28,13 @@ class PrincipalController extends Controller
 
     public function createDoador()
     {
-        return view('doador');
+        return view('site.doador');
+    }
+
+    public function storeDoador()
+    {
+        return redirect()->route('principal.create-doador')
+            ->withInput()
+            ->with(['success' => true, 'mensagem' => 'Operação realizada com sucesso!']);
     }
 }
