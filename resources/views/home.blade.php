@@ -24,14 +24,14 @@
 
 <body>
 <div class="container-fluid well-lg">
-
+    @include('menu')
     @unless (Auth::guest())
         <header class="row container-fluid">
             <nav class="navbar navbar-inversed nav-justified well-sm ">
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="{{route('admin')}}">
-                            <img src="/img/conectar.png" class="img-responsive-mod">
+                            <img src="/img/conectar-logo.png" class="img-responsive-mod">
                         </a>
                     </div>
                     <ul class="nav navbar-nav">

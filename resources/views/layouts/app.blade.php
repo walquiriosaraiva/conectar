@@ -36,7 +36,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ route('admin') }}">
-                            <h4>  Padaria Nosso Pão </h4>
+                            <h4> Conectar </h4>
                     </a>
                 </div>
 

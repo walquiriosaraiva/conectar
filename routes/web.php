@@ -1,12 +1,15 @@
 <?php
 
 Auth::routes();
-Route::get('/', 'AdministradorController@index');
+Route::get('/', 'PrincipalController@index');
+Route::get('/create-doador', 'PrincipalController@createDoador')->name('principal.create-doador');
+Route::post('/store-doador', 'PrincipalController@storeDoador')->name('principal.store-doador');
 
-
+/*
 Route::get('/teste', function () {
     return view('home');
 });
+*/
 
 Route::group(['prefix' => 'admin'], function () {
 
