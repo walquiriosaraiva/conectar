@@ -102,8 +102,67 @@
                                         <input type="text" class="form-control" id="desReferencia" name="desReferencia">
                                     </div>
                                 </div>
-
                             </div>
+
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-md-4">
+                                        <label for="sig_uf" class="control-label">UF</label>
+                                        <select class="form-control" data-live-search="true" id="sig_uf"
+                                                name="sig_uf">
+                                            <option data-tokens="ketchup mustard" value="">Selecione</option>
+                                            @foreach($ufs as $keyUf=>$valueUf)
+                                                <option data-tokens="ketchup mustard"
+                                                        value="{{ $valueUf->id }}"> {{ $valueUf->sig_uf }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <label for="sig_uf" class="control-label">UF</label>
+                                        <select class="form-control" data-live-search="true" id="sig_uf"
+                                                name="sig_uf">
+                                            <option data-tokens="ketchup mustard" value="">Selecione</option>
+                                            @foreach($cidades as $keyCidade=>$valueCidade)
+                                                <option data-tokens="ketchup mustard"
+                                                        value="{{ $valueCidade->id }}"> {{ $valueCidade->nom_cidade }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-md-10">
+                                        <label class="control-label">Desejo compartilhar</label>
+                                        <div class="row">
+                                            <div class="checkbox-inline">
+                                                <input class="checkbox-inline" type="checkbox" id="codCompartilhar"
+                                                       name="codCompartilhar"
+                                                       value="D">
+                                                <label class="control-label" for="codGenero">Doação</label>
+                                            </div>
+                                            <div class="checkbox-inline">
+                                                <input class="checkbox-inline" type="checkbox" id="codCompartilhar"
+                                                       name="codCompartilhar" value="S">
+                                                <label class="control-label" for="codGenero">Serviço</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <label class="control-label">Prestação de serviço</label>
+                                        <div class="row">
+                                            <textarea class="form-control" rows="6" cols="80"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="row">
                                 <div class="form-group">
                                     <div class="col-md-12">

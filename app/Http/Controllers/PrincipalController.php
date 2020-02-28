@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class PrincipalController extends Controller
 {
@@ -28,7 +29,9 @@ class PrincipalController extends Controller
 
     public function createDoador()
     {
-        return view('site.doador');
+        $ufs = DB::table('uf')->orderBy('id')->get();
+        $cidades = DB::table('cidade')->orderBy('id')->get();
+        return view('site.doador', compact('ufs', 'cidades'));
     }
 
     public function storeDoador()
